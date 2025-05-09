@@ -26,9 +26,20 @@ It uses modern async Rust tools like [`tokio`](https://crates.io/crates/tokio) a
 ---
 
 ## 📂 Project Structure
-
+```
+FastFetch/
+├── src/
+│   ├── fastfetcher/
+│   │   ├── fastfetcher.rs     
+│   │   └── types.rs           
+│   └── main.rs                
+├── Cargo.toml                 #
+├── dummy.pdf                  # Downloaded file example
+├── iso_8859-1.txt             # Downloaded file example
+├── .gitignore
 
 ---
+```
 
 ## 🚀 How to Run
 
