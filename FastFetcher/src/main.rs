@@ -12,13 +12,13 @@ async fn main() {
         let handle = tokio::spawn(async move {
             let content = download_file(url).await.unwrap();
 
-            save_file(content)
+            save_file(content).await.unwrap();
         });
 
         handles.push(handle);
     }
 
     for handle in handles {
-        handle.await.unwrap().await.unwrap();
+        handle.await.unwrap();
     }
 }
